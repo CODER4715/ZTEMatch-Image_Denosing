@@ -1,0 +1,2 @@
+conda activate onnx_exe
+pyinstaller --clean --upx-dir="D:/Program Files/upx-5.0.0-win64" --windowed src/GUI.py

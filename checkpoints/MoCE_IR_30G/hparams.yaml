@@ -1,0 +1,84 @@
+accum_grad: 1
+aux_l2_loss: true
+aux_l2_weight: 0.1
+balance_loss_weight: 0.05
+batch_size: 16
+benchmarks: null
+checkpoint_id: MoCE_IR_S_AIO5
+ckpt_dir: src/checkpoints
+complexity_scale: max
+data_file_dir: G:/datasets/IR
+de_type:
+- sidd
+- nind
+- deblur
+- zte
+- redblurjpeg
+- redblur
+- denoise_15
+- denoise_25
+- denoise_50
+- poisson_1
+- polyu
+depth_type: constant
+dim: 8
+epochs: 10
+exp_name: finetune_4
+fft_loss_fn: L1
+fft_loss_weight: 0.2
+fine_tune_from: finetune_3
+hdf5_path: H:/datasets/IR/all_data_optimized.h5
+heads:
+- 1
+- 2
+- 4
+- 8
+latent_dim: 2
+loss_fn: L1
+loss_type: multi_vgg
+lr: 1.0e-05
+model: MoCE_IR_30G
+ms_ssim_levels: 5
+ms_ssim_loss: true
+ms_ssim_weight: 0.5
+ms_ssim_window_size: 11
+num_blocks:
+- 2
+- 2
+- 4
+- 4
+num_dec_blocks:
+- 1
+- 2
+- 4
+num_exp_blocks: 4
+num_gpus: 1
+num_refinement_blocks: 2
+num_workers: 4
+output_path: output/
+patch_size: 192
+pixel_loss_weight: 1.5
+psnr_loss: false
+psnr_weight: 0.005
+rank_type: spread
+resume_from: null
+save_results: false
+stage_depth:
+- 1
+- 1
+- 1
+topk: 1
+trainset: standard
+use_fft_loss: true
+val_file_dir: "F:/\u667A\u80FD\u56FE\u50CF-\u6570\u636E/\u793A\u4F8B\u56FE\u7247"
+vgg_layer_weights:
+- 0.1
+- 0.6
+- 0.3
+vgg_layers:
+- 3
+- 8
+- 13
+vgg_loss_weight: 0.1
+wblogger: false
+with_complexity: true

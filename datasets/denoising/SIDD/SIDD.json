@@ -1,0 +1,1 @@
+{"default":{"train":{"meta":"SIDD_train.csv","file":"train.zip"},"test":{"meta":"SIDD_test.csv","file":"test.zip"},"validation":{"meta":"SIDDplus_valid.csv","file":"valid.zip"}},"crops":{"train":{"meta":"SIDD_train_crops.csv","file":"train_crops.zip"},"test":{"meta":"","file":""},"validation":{"meta":"","file":""}}}
